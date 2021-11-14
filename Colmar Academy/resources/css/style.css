@@ -1,0 +1,514 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v9/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY5KcCsww.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v9/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTgY3KcA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaorCFPrEHJA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaorCMPrEHJA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaorCHPrEHJA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaorCGPrEHJA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtaorCIPrE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCFPrEHJA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCMPrEHJA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCHPrEHJA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCGPrEHJA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCFPrEHJA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCMPrEHJA.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCHPrEHJA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCGPrEHJA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #2A364C;
+}
+h2{
+	font-size: 45px;
+	font-weight: 600;
+
+}
+h3{
+	font-size: 23px;
+	font-weight: 400;
+
+}
+h4{
+	font-size: 16px;
+
+}
+p{
+	font-weight: 200;
+}
+a{
+	text-decoration: none;
+	color: #2A364C; 
+}
+a:hover{
+	text-decoration: underline;
+}
+
+nav{
+	box-sizing: border-box;
+	height: 64px;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	background: #FFFEF2;
+	padding-left: 24px;
+	padding-right: 24px;
+
+}
+nav img{
+	vertical-align: middle;
+	display: none;
+}
+main{
+	position: absolute;
+	top: 64px;
+}
+.logo{
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+h1.logo-type{
+	display: inline-block;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	font-weight: 200;
+}
+ul{
+	float: right;
+	text-align: right;
+	display: inline-block;
+	padding: 22px;
+	margin: 0;
+}
+li{
+	display: inline-block;
+	padding-left: 16px;
+}
+.hero{
+	background-color: #2B7138;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: auto;
+	color: #FFFEF2;
+	
+}
+.hero img{
+	width: 60%;
+	padding-right: 24px;
+	vertical-align: middle;
+}
+.hero-text{
+	box-sizing: border-box;
+	width: 35%;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 400;
+}
+.type1 {font-family:'Libre Baskerville','times new roman', serif;
+font-size: 55px;
+margin: 0;
+
+}
+button{
+	width: 100%;
+	padding: 16px;
+	color: white;
+	background: #C1993E;
+	border:none;
+	border-radius: 0;
+	margin: 10px auto;
+	font-family: 'Raleway' sans-serif;
+	font-size: 22px;
+}
+.subhero{
+	background-color: #FFFEF2;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: auto;
+	display: flex;
+}
+ .left{
+	float: left;
+	width: 60%;
+	padding: 90px 24px 32px;
+}
+ .right{
+	float: left;
+	border-left: 1px solid lightgray;
+	display: inline-block;
+	width: 40%;
+	padding-top: 74px;
+}
+.subhero img{
+	width: 100%;
+}
+.row{
+	padding: 16px;
+}
+.row:hover{
+	background-color: #E1EDF9;
+}
+.row .text{
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	width: 64%;
+}
+.row img{
+	box-sizing: border-box;
+	width: 35%;
+	vertical-align: middle;
+	height: auto;
+}
+.mobile-img{
+	display: none;
+}
+.start-learning{
+	background-color: #E1EDF9;
+	padding: 32px 72px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.start-learning h2{
+	text-align: center;
+}
+.card{
+	display: inline-block;
+	width: 31%;
+	background: white;
+	margin: 16px;
+	height: 500px;
+	vertical-align: middle;
+
+}
+.card:hover{
+	transform: scale(1.02);
+
+}
+.card img{
+	width: 100%;
+}
+.card .text{
+	padding: 0 24px 24px;
+}
+.thesis-title h2{
+	width: 100%;
+	text-align: center;
+	background-color: #FFFEF2;
+	margin: 0px;
+	padding: 40px 0 30px;
+	border-bottom: 1px solid lightgray;
+}
+
+.thesis-exhibit{
+	background-color: #FFFEF2;
+	padding: 0 24px;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+}
+.thesis .left{
+	padding-top: 16px;
+}
+video{
+	width: 100%;
+}
+footer{
+	width: 100%;
+	box-sizing: border-box;
+	height: 96px;
+	padding: 12px 24px 36px;
+	background-color: #2B7138;
+	color: #FFFEF2;
+}
+footer p,a{
+	display: inline-block;
+	vertical-align: top;
+	color: inherit;
+
+}
+/*media query*/
+
+@media only screen and (max-width: 1375px)
+{
+.hero img{
+	width: 40%;
+}
+
+
+@media only screen and (max-width: 425px)
+{
+	main{
+	position: absolute;
+	top: 160px;
+}
+h2{
+	font-size: 80px;
+}
+h3{
+	font-size: 55px;
+	margin-bottom: 48px;
+}
+p,a{
+	font-size: 42px;
+	margin-bottom: 46px;
+}
+
+
+.hero img{
+	width: 100%;
+	padding: 0px;
+}
+h1.logo-type{
+	display: none;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	height: 160px;
+}	
+.logo{
+	width: 80px;
+}
+
+nav img{
+	vertical-align: middle;
+	display: inline-block;
+	width: 80px;
+	margin: 0 auto;
+}
+ul{
+	display: none;
+}
+.type1{
+	font-size: 5em;
+}
+.hero-text{
+	box-sizing: border-box;
+	padding: 120px 60px;
+	width: 100%;
+}
+button{
+	width: 100%;
+	padding: 60px;
+	margin: 10px auto;
+	font-size: 70px;
+	}
+
+ .left{
+	display: none;
+}
+.right{
+	width: 100%;
+	padding-bottom: 60px;
+	padding-top: 0;
+
+}
+.row{ 
+	padding: 0 60px;
+}
+.row img{
+	display: none;
+}
+.row .text{
+	width: 100%;
+}
+.row .mobile-img{
+	display: block;
+	width: 100%;
+	margin-top: 75px;
+}
+.start-learning{
+	padding: 0 60px 120px;
+}
+.start-learning h2{
+	padding: 40px 0 15px;
+	margin: 0;
+}
+.card{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 30px 0;
+}
+.card img{
+	display: none;
+}
+.card .text{
+	padding: 0;
+}
+.card h3{
+	padding: 16px 16px 24px 16px;
+	margin: 0;
+}
+.card .text p{
+
+	display: none;
+}
+.thesis-exhibit{
+	padding: 0;
+}
+.thesis-exhibit .left{
+	display: block;
+	padding: 0;
+	width: 100%;
+}
+.thesis-exhibit h3, .thesis-exhibit p{
+	display: none;
+}
+.thesis-exhibit .right{
+	display: none;
+}
+footer{
+	height: 173px;
+	padding: 12px 60px 36px;
+}
+footer p{
+	margin-top: 65px;
+}
+}
+
