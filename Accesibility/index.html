@@ -1,0 +1,688 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='styles.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+	<style>
+	body {
+  background-color: #FFF;
+  display: flex;
+  flex: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  background-color: #FFF;
+  border-bottom: 2px solid #F0F0F0;
+  box-sizing: border-box;
+  display: flex;
+  height: 75px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  justify-content: center;
+}
+
+.header-content {
+  width: 800px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  flex: 2;
+  padding: 0 10px;
+}
+
+.nav-link-list {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  padding: 0;
+}
+
+nav a {
+  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  margin-left: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+#logo {
+  width: 100px;
+}
+
+.primary-text-color {
+  /* Set color to a new value with at least 3:1 contrast ratio */
+  color: #333333;
+}
+
+.secondary-text-color {
+  color: #767676;
+}
+
+ /* SEARCH INPUT STYLES */
+
+.search-container {
+  background-color: purple;
+  position: relative;
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.search-container input {
+  font-size: 16px;
+  padding: 5px;
+  width: 200px;
+}
+
+.main {
+  background-color: #FFF;
+  height: 100%;
+  padding-top: 75px;
+  width: 100%;
+}
+
+/* SPOTLIGHT CONTENT */
+.spotlight-container {
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+  height: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.spotlight-list {
+  display: flex;
+  /* Change flex-direction to match HTML content order */
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+}
+
+.spotlight-item {
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  padding: 0 5px;
+  position: relative;
+  width: calc(100% / 3);
+}
+
+.spotlight-item-inner {
+  background-color: #FFF;
+  border-radius: 4px;
+  flex: 1;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgb(50 50 93 / 10%);
+  -webkit-box-shadow: 0 2px 4px 0 rgb(50 50 93 / 10%);
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-image-link {
+  display: block;
+  height: 220px;
+  width: 100%;
+  background-color: rgba(155,155,155,0.07);
+}
+
+.spotlight-image-link:hover {
+  opacity: .8
+}
+
+.spotlight-image-link img {
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .17s ease;
+  width: 100%;
+  z-index: 1;
+}
+
+.post-info {
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-meta span{
+  display: inline-block;
+}
+
+.post-title {
+  font-size: 1.3rem;
+  flex: 2;
+}
+
+.post-author {
+  font-weight: bold;
+  /* color: #333333; */
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.post-author a::after {
+  content: " - ";
+}
+
+.post-date {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.post-tag {
+  height: 20px;
+  z-index: 5;
+  background-color: #f2644f;
+  color: #fff;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 5px;
+  width: fit-content;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-list {
+  width: 1000px;
+  height: auto;
+  padding: 0
+}
+
+.content-list-item {
+  height: 35vh;
+  background-color: #F8F8F8;
+  overflow: hidden;
+  display: flex;
+}
+
+.content-list-item:nth-child(n+2) {
+  margin: 20px 0;
+}
+
+.content-item-image-container {
+  width: 35%;
+  position: relative;
+  border-radius: 8px;
+}
+
+.content-item-image-container .post-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.content-item-image-link {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-item-image-link:hover {
+  opacity: .8
+}
+
+.content-item-image-link img {
+  height: 100%;
+  object-fit: cover;
+  transition: opacity .17s ease;
+  width: 100%;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.content-item-info {
+  flex: 1;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-item-title {
+  font-size: 1.3rem
+}
+
+.summary {
+  /* Change font-size below to be between 18 to 20 pixels */
+  font-size: 18px;
+  /* Set line-height to 1.5 */
+  line-height: 1.5;
+  /* Set letter-spacing to 1.2 */
+  letter-spacing: 1.2;
+  /* Change text-align to left */
+  text-align: left;
+
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px 20px;
+  outline: none;
+  box-shadow: none;
+  background: none;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.read-more {
+  background-color: #f2644f;
+  color: #FFF;
+  border-radius: 2px;
+  transition: background .17s ease;
+}
+
+.read-more:hover {
+  background-color: #202020;
+}
+
+.social-share-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.social-link {
+  margin: 0 5px;
+}
+
+.social-link .icon {
+  font-size: 20px;
+  color: #333333;
+}
+
+a:hover {
+  /* Set links to change color when they are hovered over */
+  color: purple;
+  /* Set cursor to pointer */
+  cursor: pointer;
+}
+
+.spotlight-item-sm {
+  display: none;
+}
+
+nav select {
+  display: none;
+}
+
+input:focus {
+  outline: none;
+  /* Set solid border of size 1px and of a color of your choice */
+  border: 1px solid blue;
+}
+
+.premium {
+  /* Hide premium content */
+  visibility: hidden;
+}
+
+@media print {
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  header {
+    padding: 0 30px;
+  }
+
+  nav{
+    padding: 0 12px;
+  }
+
+  nav select {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .nav-link-list {
+    display: none;
+  }
+
+  .content-list-item {
+    height: 35vh;
+  }
+
+  .spotlight-container {
+    background-color: #F0F0F0;
+    box-sizing: border-box;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  
+  .spotlight-list {
+    display: flex;
+    /* Change flex-direction to match HTML content order */
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+  }
+  
+  .spotlight-item {
+    display: none;
+  }
+
+  .spotlight-item-sm {
+    display: flex;
+    height: 35vh;
+  }
+
+  .spotlight-item-sm:nth-child(n+2) {
+    margin: 10px 0;
+  }
+
+  .spotlight-item-sm .content-item-info {
+    background-color: #FFF;
+  }
+
+}
+	
+	</style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class='header-content'>
+        <img src='images/code-logo.png' id='logo' />
+        <nav>
+          <ul class='nav-link-list'>
+            <li>
+              <a href='/home'>home</a>
+            </li>
+            <li>
+              <a href='/editors-choice'>editor's choice</a>
+            </li>
+            <li>
+              <a href='/most-popular'>most popular</a>
+            </li>
+            <li class='premium'>
+              <a href='/for-you'>for you</a>
+            </li>
+          </ul>
+
+          <select>
+            <option value='' selected='selected'>Navigation</option> 
+            <option value='/'><a href='/home'>Home</a></option>
+            <option value='/editors-choice'><a href='/editors-choice'>Editor's Choice</a></option> 
+            <option value='/most-popular'><a href='/most-popular'>Most Popular</a></option>
+            <option value='/for-you'><a href='/for-you'>For You</a></option>
+          </select>
+        </nav>
+        <!-- Hide the search icon below from screen readers -->
+        <span class='fas fa-search search-icon secondary-text-color' aria-hidden='true'></span>
+        <div class='search-container'>
+          <input class='search-input' placeholder='Find a story...'/>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class='main'>
+      <section class='spotlight-container'>
+        <ul class='spotlight-list'>
+          <li class='spotlight-item'>
+            <div class='spotlight-item-inner'>
+              <a class='spotlight-image-link' href='#'>
+                <img src='images/java-for-programmers-new-course-codecademy.png'/>
+              </a>
+              <div class='post-info'>
+                <span class='post-tag'>learning to code</span>
+                <h2 class='post-title primary-text-color'>
+                  <a>Introducing Java for Programmers</a>
+                </h2>
+                <div class='post-meta'>
+                  <span class='post-author primary-text-color'>
+                    <a>Codecademy</a>
+                  </span>
+                  <span class='post-date secondary-text-color'>February 4, 2021</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='spotlight-item-sm'>
+            <div class='content-item-image-container'>
+              <span class='post-tag'>learning to code</span>
+              <a class='content-item-image-link' href='#'>
+                <img src='images/java-for-programmers-new-course-codecademy.png'/>
+              </a>
+            </div>
+            <div class='content-item-info'>
+              <h2 class='primary-text-color'>
+                <a>Introducing Java for Programmers</a>
+              </h2>
+              <div class='post-meta'>
+                <span class='post-author primary-text-color'>
+                  <a>Codecademy</a>
+                </span>
+                <span class='post-date secondary-text-color'>February 4, 2021</span>
+              </div>
+              <p class='summary primary-text-color'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th…</p>
+              <a href='#'>
+                <button class='btn read-more'>Read More</button>
+              </a>
+            </div>
+          </li>
+          <li class='spotlight-item'>
+            <div class='spotlight-item-inner'>
+              <a class='spotlight-image-link' href='#'>
+                <img src='images/coding-mentor.png'/>
+              </a>
+              <div class='post-info'>
+                <span class='post-tag'>learning to code</span>
+                <h2 class='post-title primary-text-color'>
+                  <a>3 Ways a Coding Mentor Can Help You Learn</a>
+                </h2>
+                <div class='post-meta'>
+                  <span class='post-author primary-text-color'>
+                    <a>Codecademy</a>
+                  </span>
+                  <span class='post-date secondary-text-color'>April 2, 2021</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='spotlight-item-sm'>
+            <div class='content-item-image-container'>
+              <span class='post-tag'>learning to code</span>
+              <a class='content-item-image-link' href='#'>
+                <img src='images/coding-mentor.png'/>
+              </a>
+            </div>
+            <div class='content-item-info'>
+              <h2 class='primary-text-color'>
+                <a>3 Ways a Coding Mentor Can Help You Learn</a>
+              </h2>
+              <div class='post-meta'>
+                <span class='post-author primary-text-color'>
+                  <a>Codecademy</a>
+                </span>
+                <span class='post-date secondary-text-color'>April 2, 2021</span>
+              </div>
+              <p class='summary primary-text-color'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th…</p>
+              <a href='#'>
+                <button class='btn read-more'>Read More</button>
+              </a>
+            </div>
+          </li>
+          <li class='spotlight-item'>
+            <div class='spotlight-item-inner'>
+              <a class='spotlight-image-link' href='#'>
+                <img src='images/what-is-a-programming-language.png'/>
+              </a>
+              <div class='post-info'>
+                <span class='post-tag'>learning to code</span>
+                <h2 class='post-title primary-text-color'>
+                  <a>What is a Programming Language?</a>
+                </h2>
+                <div class='post-meta'>
+                  <span class='post-author primary-text-color'>
+                    <a>Codecademy</a>
+                  </span>
+                  <span class='post-date secondary-text-color'>July 22, 2020</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class='spotlight-item-sm'>
+            <div class='content-item-image-container'>
+              <span class='post-tag'>learning to code</span>
+              <a class='content-item-image-link' href='#'>
+                <img src='images/what-is-a-programming-language.png'/>
+              </a>
+            </div>
+            <div class='content-item-info'>
+              <h2 class='primary-text-color'>
+                <a>What is a Programming Language?</a>
+              </h2>
+              <div class='post-meta'>
+                <span class='post-author primary-text-color'>
+                  <a>Codecademy</a>
+                </span>
+                <span class='post-date secondary-text-color'>July 22, 2020</span>
+              </div>
+              <p class='summary primary-text-color'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th…</p>
+              <a href='#'>
+                <button class='btn read-more'>Read More</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class='main-content'>
+        <ul class='content-list'>
+          <li class='content-list-item'>
+            <div class='content-item-image-container'>
+              <span class='post-tag'>learning to code</span>
+              <a class='content-item-image-link' href='#'>
+                <img src='images/build-ios-apps-swiftui.png'/>
+              </a>
+            </div>
+            <div class='content-item-info'>
+              <h2 class='primary-text-color'>
+                <!-- Add <abbr> tag for Apps -->
+                <a>Introducing Build iOS Apps with SwiftUI</a>
+              </h2>
+              <div class='post-meta'>
+                <span class='post-author primary-text-color'>
+                  <a>Codecademy</a>
+                </span>
+                <span class='post-date secondary-text-color'>July 22, 2020</span>
+              </div>
+              <p class='summary primary-text-color'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th…</p>
+              <a href='#'>
+                <button class='btn read-more'>Read More</button>
+              </a>
+            </div>
+          </li>
+          <li class='content-list-item'>
+            <div class='content-item-image-container'>
+              <span class='post-tag'>learning to code</span>
+              <a class='content-item-image-link' href='#'>
+                <img src='images/how-to-get-a-job-as-a-developer--h-.png'/>
+              </a>
+            </div>
+            <div class='content-item-info'>
+              <h2 class='primary-text-color'>
+                <a>How to Get a Job as a Developer</a>
+              </h2>
+              <div class='post-meta'>
+                <span class='post-author primary-text-color'>
+                  <a>Codecademy</a>
+                </span>
+                <span class='post-date secondary-text-color'>July 22, 2020</span>
+              </div>
+              <p class='summary primary-text-color'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th…</p>
+              <a href='#'>
+                <button class='btn read-more'>Read More</button>
+              </a>
+            </div>
+          </li>
+          <li class='content-list-item'>
+            <div class='content-item-image-container'>
+              <span class='post-tag'>learning to code</span>
+              <a class='content-item-image-link' href='#'>
+                <img src='images/what-is-open-source.png'/>
+              </a>
+            </div>
+            <div class='content-item-info'>
+              <h2 class='primary-text-color'>
+                <a>Understanding Open Source Software: Q & A</a>
+              </h2>
+              <div class='post-meta'>
+                <span class='post-author primary-text-color'>
+                  <a>Codecademy</a>
+                </span>
+                <span class='post-date secondary-text-color'>July 22, 2020</span>
+              </div>
+              <p class='summary primary-text-color'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th…</p>
+              <a href='#'>
+                <button class='btn read-more'>Read More</button>
+              </a>
+            </div>
+          </li>
+          <li class='content-list-item'>
+            <div class='content-item-image-container'>
+              <span class='post-tag'>learning to code</span>
+              <a class='content-item-image-link' href='#'>
+                <img src='images/CSS-interview-questions.png'/>
+              </a>
+            </div>
+            <div class='content-item-info'>
+              <h2 class='primary-text-color'>
+                <!-- Add <abbr> tag for CSS -->
+                <a>7 Top <abbr title='Cascading Style Sheets'>CSS</abbr> Interview Questions to Practice</a>
+              </h2>
+              <div class='post-meta'>
+                <span class='post-author primary-text-color'>
+                  <a>Codecademy</a>
+                </span>
+                <span class='post-date secondary-text-color'>July 22, 2020</span>
+              </div>
+              <p class='summary primary-text-color'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been th…</p>
+              <a href='#'>
+                <button class='btn read-more'>Read More</button>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
